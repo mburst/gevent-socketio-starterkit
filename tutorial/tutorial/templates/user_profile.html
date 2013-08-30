@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}{{username}}{% endblock %}
+{% block js %}
+    <script src="{{STATIC_URL}}js/socket.io.js"></script>
+    <script>
+        //Insert js
+    </script>
+{% endblock %}
+{% block content %}
+    {% if request.user.is_authenticated %}
+        <p>Logged in as: {{request.user.username}}</p>
+    {% endif %}
+    <form action="" method="POST">
+        {{ form.as_ul }}
+        <input type="submit" value="Submit Taco">
+        {% csrf_token %}
+  </form>
+    <ul id="tacos">
+        {% for taco in tacos %}
+         <li>{{taco.user}}: {{taco.status}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

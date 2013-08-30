@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Create an account{% endblock %}
+{% block content %}
+  <h1>Create an account</h1>
+  {% if user.is_authenticated %}
+  <p>Please <a href="{% url 'django.contrib.auth.views.logout' %}">logout</a> before making a new account</p>
+  {% else %}
+  <form action="{% url 'core.views.register' %}" method="POST">
+        {{ form.as_ul }}
+        <input type="submit" value="Create the account">
+        {% csrf_token %}
+  </form>
+  {% endif %}
+{% endblock %}
