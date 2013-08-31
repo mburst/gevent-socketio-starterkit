@@ -17,6 +17,14 @@ cd ~/.virtualenvs/djangocon/lib/python2.7/site-packages/socketio/
 wget https://raw.github.com/abourget/gevent-socketio/master/socketio/sdjango.py
 ```
 
+You'll also probably need to edit the default haproxy file.
+
+```
+sudo nano /etc/default/haproxy
+ENABLED=1
+```
+
+
 ```
 //Node.js (optional stuff)
 npm install -g websocket-bench
