@@ -3,7 +3,7 @@ Ubuntu:
 sudo add-apt-repository ppa:chris-lea/redis-server
 sudo add-apt-repository ppa:nilya/haproxy-1.5
 sudo apt-get update
-sudo apt-get install libevent-dev python-software-properties redis-server haproxy
+sudo apt-get install libevent-dev python-software-properties redis-server haproxy python-dev
 mkvirtualenv djangocon #This step is optional
 pip install gevent-socketio django redis
 ```
