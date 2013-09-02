@@ -12,41 +12,31 @@
         <script src="/static/jquery.js"></script>
         <script src="/static/socket.io.js"></script>
         <script>
-            $(function () {
-                var socket = io.connect('/pointer');
-
-                socket.on('connect', function () {
-                    console.log('connected!');
+            $(document).ready(function(){
+            var socket = io.connect("/pointer");
+            
+                socket.on('connect', function(){
+                   console.log('Yay we connected'); 
                 });
-
-                socket.on('move', function (data) {
-                    var $userDiv = $('#' + data.user);
-                    if($userDiv.length) {
-                        $userDiv.css({
-                            left: data.x,
-                            top: data.y
-                        });
+                
+                socket.on('move', function(data){
+                    if($("#" + data.user).length){
+                        $("#" + data.user).css('left', data.x);
+                        $("#" + data.user).css('top', data.y);
                     } else {
-                        var $div = $('<div></div>', {
-                            id: data.user,
-                            class: 'pointer'
-                        });
-
-                        $('body').append($div);
+                        var div = $("<div>", {id: data.user, class: "pointer"})
+                        $('body').append(div);
+                        $("#" + data.user).css('left', data.x);
+                        $("#" + data.user).css('top', data.y);
                     }
                 });
-
-                socket.on('update_count', function (count) {
-                    $('#count').html(count);
-                });
-
-                $('body').on('mousemove', function (evt) {
-                    var coordinates = {
-                        x: evt.pageX,
-                        y: evt.pageY
-                    };
-                    console.log(coordinates);
-                    socket.emit('moved', coordinates);
+            
+                socket.on('update_count', function(number){
+                    $("#count").text(number);
+                })
+            
+                $(document).on('mousemove', function(e){
+                    socket.emit('moved', {'x': e.pageX, 'y': e.pageY});
                 });
             });
         </script>

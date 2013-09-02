@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}{{team_name}}'s Draft{% endblock %}
+{% block js %}
+    <style>
+        li { display: table; }
+    </style>
+    <script src="{{STATIC_URL}}js/socket.io.js"></script>
+    <script>
+        $(document).ready(function(){
+            var socket = io.connect("/draft");
+            
+            socket.on("connect", function(){
+                console.log('Connceted!');
+                socket.emit('join', '{{league_id}}')
+            });
+            
+            window.onbeforeunload = function(){
+                socket.disconnect();
+            }
+            
+            $("#undrafted").on('click', 'li', function(){
+               socket.emit('pick', $(this).attr('id'));
+            });
+            
+            socket.on('new_team', function(team){
+                //Check if we already know about this team
+                if (!$("#team_" + team.id).length) {
+                    var output = '<h3>' + team.name + '</h3>';
+                    output += '<ul id="team_' + team.id + '"></ul>';
+                    $("body").append(output);
+                }
+            });
+            
+            socket.on('new_drafter', function(msg){
+                $("#current").text(msg);
+            });
+            
+            socket.on('player_drafted', function(pick){
+                var player = $("#" + pick.player);
+                $("#team_" + pick.team).append('<li>' + player.text() + '</li>');               
+                player.remove();
+            });
+            
+            socket.on('draft_over', function(msg){
+               alert(msg); 
+            });
+        });
+    </script>
+{% endblock %}
+{% block content %}
+    <p>Team: {{team_name}}</p>
+    <p>Current Pick: <span id="current"></span></p>
+    <h2>Undrafted Players</h2>
+    <ul id="undrafted">
+        {% for player in remaining_players %}
+            <li id="{{player.id}}">{{player.name}} - {{player.position}}</li>
+        {% endfor %}
+    </ul>
+    
+    <h2>Teams</h2>
+    {% for team in teams %}
+        <h3>{{team.name}}</h3>
+        <ul id="team_{{team.id}}">
+            {% for player in team.players.all %}
+                <li>{{player.name}} - {{player.position}}</li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+{% endblock %}

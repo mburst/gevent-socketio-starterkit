@@ -1,0 +1,74 @@
+[
+{
+    "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "max", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": true, 
+        "is_staff": true, 
+        "last_login": "2013-08-25T01:29:14Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$G5OAivR70jb4$Qg4ae3N6ibUijFms3W8xoTiEXS3pnBW6m14HSjsxtLk=", 
+        "email": "mburst@maxburstein.com", 
+        "date_joined": "2013-08-25T01:28:55Z"
+    }
+},
+{
+    "pk": 2, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "max1", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2013-08-25T01:32:53.207Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$dq1Vhr7q0jto$evvn4LVbkQ0HWRcmQg+gcdOJc0Je8IPRCkCjGTsjtuc=", 
+        "email": "", 
+        "date_joined": "2013-08-25T01:32:53.207Z"
+    }
+},
+{
+    "pk": 3, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "max2", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2013-08-25T01:33:12.324Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$t0ttR59l3KLV$g1IL69JZW3aGdX45/gDyqeFWd66QjzmHIZkPJigdcLM=", 
+        "email": "", 
+        "date_joined": "2013-08-25T01:33:12.324Z"
+    }
+},
+{
+    "pk": 4, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "max3", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2013-08-25T01:33:25.691Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$10000$lgq8HZZGyqq1$StzhQ2WCJ+1D7SqBQeAhjTDfc1UIe3Va4ThxYpIGSoo=", 
+        "email": "", 
+        "date_joined": "2013-08-25T01:33:25.691Z"
+    }
+}
+]

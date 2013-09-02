@@ -56,7 +56,7 @@ class Command(BaseCommand):
             print
             handler = self.get_handler(*args, **options)
             server = SocketIOServer(bind, handler, resource="socket.io", policy_server=True)
-            #server.serve_forever()port
+            #server.serve_forever()
             from gevent.event import Event
             stopper = Event()
             server.start()

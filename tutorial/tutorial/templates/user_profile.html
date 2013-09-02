@@ -3,7 +3,18 @@
 {% block js %}
     <script src="{{STATIC_URL}}js/socket.io.js"></script>
     <script>
-        //Insert js
+        var socket = io.connect('/user');
+        
+        window.WEB_SOCKET_SWF_LOCATION = '{{STATIC_URL}}flashsocket/WebSocketMain.swf';
+        
+        socket.on('connect', function(){
+           console.log('Connected');
+           socket.emit('set_user', '{{username}}');
+        });
+        
+        socket.on('taco', function(status){
+            $("#tacos").prepend("<li>" + status + "</li>");
+        });
     </script>
 {% endblock %}
 {% block content %}

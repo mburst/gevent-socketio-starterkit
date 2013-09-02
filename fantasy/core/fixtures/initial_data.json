@@ -1,0 +1,874 @@
+[
+	{
+		"pk": 1, 
+		"model": "auth.user", 
+		"fields": {
+			"username": "max", 
+			"first_name": "", 
+			"last_name": "", 
+			"is_active": true, 
+			"is_superuser": true, 
+			"is_staff": true, 
+			"last_login": "2013-08-25T01:29:14Z", 
+			"groups": [], 
+			"user_permissions": [], 
+			"password": "pbkdf2_sha256$10000$G5OAivR70jb4$Qg4ae3N6ibUijFms3W8xoTiEXS3pnBW6m14HSjsxtLk=", 
+			"email": "mburst@maxburstein.com", 
+			"date_joined": "2013-08-25T01:28:55Z"
+		}
+	},
+	{
+		"pk": 2, 
+		"model": "auth.user", 
+		"fields": {
+			"username": "max1", 
+			"first_name": "", 
+			"last_name": "", 
+			"is_active": true, 
+			"is_superuser": false, 
+			"is_staff": false, 
+			"last_login": "2013-08-25T01:32:53.207Z", 
+			"groups": [], 
+			"user_permissions": [], 
+			"password": "pbkdf2_sha256$10000$dq1Vhr7q0jto$evvn4LVbkQ0HWRcmQg+gcdOJc0Je8IPRCkCjGTsjtuc=", 
+			"email": "", 
+			"date_joined": "2013-08-25T01:32:53.207Z"
+		}
+	},
+	{
+		"pk": 3, 
+		"model": "auth.user", 
+		"fields": {
+			"username": "max2", 
+			"first_name": "", 
+			"last_name": "", 
+			"is_active": true, 
+			"is_superuser": false, 
+			"is_staff": false, 
+			"last_login": "2013-08-25T01:33:12.324Z", 
+			"groups": [], 
+			"user_permissions": [], 
+			"password": "pbkdf2_sha256$10000$t0ttR59l3KLV$g1IL69JZW3aGdX45/gDyqeFWd66QjzmHIZkPJigdcLM=", 
+			"email": "", 
+			"date_joined": "2013-08-25T01:33:12.324Z"
+		}
+	},
+	{
+		"pk": 4, 
+		"model": "auth.user", 
+		"fields": {
+			"username": "max3", 
+			"first_name": "", 
+			"last_name": "", 
+			"is_active": true, 
+			"is_superuser": false, 
+			"is_staff": false, 
+			"last_login": "2013-08-25T01:33:25.691Z", 
+			"groups": [], 
+			"user_permissions": [], 
+			"password": "pbkdf2_sha256$10000$lgq8HZZGyqq1$StzhQ2WCJ+1D7SqBQeAhjTDfc1UIe3Va4ThxYpIGSoo=", 
+			"email": "", 
+			"date_joined": "2013-08-25T01:33:25.691Z"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "1",
+		"fields": {
+			"name": "JAMES ALONSO",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "2",
+		"fields": {
+			"name": "JOHN BRODERICK",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "3",
+		"fields": {
+			"name": "ROBERT DARELL",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "4",
+		"fields": {
+			"name": "MICHAEL DORSEY",
+			"position": "K"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "5",
+		"fields": {
+			"name": "WILLIAM ELDEN",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "6",
+		"fields": {
+			"name": "DAVID HAI",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "7",
+		"fields": {
+			"name": "RICHARD JERE",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "8",
+		"fields": {
+			"name": "CHARLES JEWEL",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "9",
+		"fields": {
+			"name": "JOSEPH LINDSAY",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "10",
+		"fields": {
+			"name": "THOMAS LYNWOOD",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "11",
+		"fields": {
+			"name": "CHRISTOPHER MICHAL",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "12",
+		"fields": {
+			"name": "DANIEL SHON",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "13",
+		"fields": {
+			"name": "PAUL VINCENZO",
+			"position": "K"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "14",
+		"fields": {
+			"name": "MARK WILLIAN",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "15",
+		"fields": {
+			"name": "DONALD BUCK",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "16",
+		"fields": {
+			"name": "GEORGE ELISHA",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "17",
+		"fields": {
+			"name": "KENNETH JERAMY",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "18",
+		"fields": {
+			"name": "STEVEN LAUREN",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "19",
+		"fields": {
+			"name": "EDWARD LEIF",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "20",
+		"fields": {
+			"name": "BRIAN PORTER",
+			"position": "K"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "21",
+		"fields": {
+			"name": "RONALD SID",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "22",
+		"fields": {
+			"name": "ANTHONY EDMUNDO",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "23",
+		"fields": {
+			"name": "KEVIN FRANKLYN",
+			"position": "K"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "24",
+		"fields": {
+			"name": "JASON GRAIG",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "25",
+		"fields": {
+			"name": "MATTHEW JACINTO",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "26",
+		"fields": {
+			"name": "GARY KENETH",
+			"position": "K"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "27",
+		"fields": {
+			"name": "TIMOTHY LUIGI",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "28",
+		"fields": {
+			"name": "JOSE PATRICIA",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "29",
+		"fields": {
+			"name": "LARRY WALLY",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "30",
+		"fields": {
+			"name": "JEFFREY WINFORD",
+			"position": "K"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "31",
+		"fields": {
+			"name": "FRANK ARLIE",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "32",
+		"fields": {
+			"name": "SCOTT CEDRICK",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "33",
+		"fields": {
+			"name": "ERIC HOBERT",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "34",
+		"fields": {
+			"name": "STEPHEN JEROMY",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "35",
+		"fields": {
+			"name": "ANDREW JERRELL",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "36",
+		"fields": {
+			"name": "RAYMOND KRAIG",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "37",
+		"fields": {
+			"name": "GREGORY LEANDRO",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "38",
+		"fields": {
+			"name": "JOSHUA RUEBEN",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "39",
+		"fields": {
+			"name": "JERRY ARNOLDO",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "40",
+		"fields": {
+			"name": "DENNIS HARLAND",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "41",
+		"fields": {
+			"name": "WALTER HAYDEN",
+			"position": "K"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "42",
+		"fields": {
+			"name": "PATRICK JEWELL",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "43",
+		"fields": {
+			"name": "PETER KASEY",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "44",
+		"fields": {
+			"name": "HAROLD MAN",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "45",
+		"fields": {
+			"name": "DOUGLAS BENTON",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "46",
+		"fields": {
+			"name": "HENRY BOYCE",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "47",
+		"fields": {
+			"name": "CARL KRISTOFER",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "48",
+		"fields": {
+			"name": "ARTHUR LESLEY",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "49",
+		"fields": {
+			"name": "RYAN LUCIUS",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "50",
+		"fields": {
+			"name": "ROGER MARCELLUS",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "51",
+		"fields": {
+			"name": "JOE RENALDO",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "52",
+		"fields": {
+			"name": "JUAN REY",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "53",
+		"fields": {
+			"name": "JACK ROLF",
+			"position": "K"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "54",
+		"fields": {
+			"name": "ALBERT RUDOLF",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "55",
+		"fields": {
+			"name": "JONATHAN SANTO",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "56",
+		"fields": {
+			"name": "JUSTIN SHAD",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "57",
+		"fields": {
+			"name": "TERRY HOSEA",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "58",
+		"fields": {
+			"name": "GERALD VON",
+			"position": "K"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "59",
+		"fields": {
+			"name": "KEITH WAYLON",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "60",
+		"fields": {
+			"name": "SAMUEL COLTON",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "61",
+		"fields": {
+			"name": "WILLIE JOSPEH",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "62",
+		"fields": {
+			"name": "RALPH KOREY",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "63",
+		"fields": {
+			"name": "LAWRENCE LONG",
+			"position": "K"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "64",
+		"fields": {
+			"name": "NICHOLAS MALCOM",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "65",
+		"fields": {
+			"name": "ROY ANTIONE",
+			"position": "K"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "66",
+		"fields": {
+			"name": "BENJAMIN CORTEZ",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "67",
+		"fields": {
+			"name": "BRUCE CRISTOPHER",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "68",
+		"fields": {
+			"name": "BRANDON ELDRIDGE",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "69",
+		"fields": {
+			"name": "ADAM NICKY",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "70",
+		"fields": {
+			"name": "HARRY TUAN",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "71",
+		"fields": {
+			"name": "FRED ZACKARY",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "72",
+		"fields": {
+			"name": "WAYNE MALIK",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "73",
+		"fields": {
+			"name": "BILLY WES",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "74",
+		"fields": {
+			"name": "STEVE GRANVILLE",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "75",
+		"fields": {
+			"name": "LOUIS MICHALE",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "76",
+		"fields": {
+			"name": "JEREMY DEANGELO",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "77",
+		"fields": {
+			"name": "AARON FILIBERTO",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "78",
+		"fields": {
+			"name": "RANDY GASTON",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "79",
+		"fields": {
+			"name": "HOWARD GAYLORD",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "80",
+		"fields": {
+			"name": "EUGENE JAE",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "81",
+		"fields": {
+			"name": "CARLOS MANUAL",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "82",
+		"fields": {
+			"name": "RUSSELL FRANCESCO",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "83",
+		"fields": {
+			"name": "BOBBY MODESTO",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "84",
+		"fields": {
+			"name": "VICTOR WARNER",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "85",
+		"fields": {
+			"name": "MARTIN ZACK",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "86",
+		"fields": {
+			"name": "ERNEST ARLEN",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "87",
+		"fields": {
+			"name": "PHILLIP ASA",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "88",
+		"fields": {
+			"name": "TODD FAUSTO",
+			"position": "K"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "89",
+		"fields": {
+			"name": "JESSE GARRET",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "90",
+		"fields": {
+			"name": "CRAIG GAYLE",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "91",
+		"fields": {
+			"name": "ALAN ISREAL",
+			"position": "K"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "92",
+		"fields": {
+			"name": "SHAWN JOHNSON",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "93",
+		"fields": {
+			"name": "CLARENCE LEIGH",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "94",
+		"fields": {
+			"name": "SEAN HONG",
+			"position": "QB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "95",
+		"fields": {
+			"name": "PHILIP MOSE",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "96",
+		"fields": {
+			"name": "CHRIS BENEDICT",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "97",
+		"fields": {
+			"name": "JOHNNY BRITT",
+			"position": "WR"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "98",
+		"fields": {
+			"name": "EARL DEL",
+			"position": "TE"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "99",
+		"fields": {
+			"name": "JIMMY NATHANAEL",
+			"position": "RB"
+		}
+	},
+	{
+		"model":"core.Player",
+		"pk": "100",
+		"fields": {
+			"name": "ANTONIO TONEY",
+			"position": "WR"
+		}
+	}
+]

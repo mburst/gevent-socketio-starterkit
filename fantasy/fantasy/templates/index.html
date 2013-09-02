@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block title %}Fantasy Island{% endblock %}
+{% block js %}
+    <script src="{{STATIC_URL}}js/socket.io.js"></script>
+    <script>
+        $(document).ready(function(){
+            var socket = io.connect("/home");
+            
+            socket.on("connect", function(){
+                console.log('Connceted!');
+            });
+            
+            window.onbeforeunload = function(){
+                socket.disconnect();
+            }
+            
+            socket.on('new_league', function(league){
+                var output = '<li id="' + league.id + '">';
+                output += '<h3>' + league.name + '</h3>';
+                output += '<ul></ul>';
+                output += '<div><label>Join League: </label>'
+                output += '<input data-join="' + league.id + '" type="text"></div>';
+                output += '</li>';
+                $("#leagues").append(output);
+            });
+            
+            socket.on('new_member', function(data){
+                if (data.full) {
+                    $("#" + data.league_id).remove();
+                } else {
+                    $("#" + data.league_id + " ul").append('<li>' + data.team_name + '</li>');
+                }
+            });
+            
+            socket.on('redirect', function(msg){
+                window.location.href = msg;
+            });
+            
+            socket.on('error', function(msg){
+                console.log(msg);
+            });
+            
+            $("#create_league").on('keypress', function(e){
+                if (e.which == 13) {
+                    socket.emit('create_league', $(this).val());
+                    $(this).val('');
+                }
+            });
+            
+            $("#leagues").on('keypress', 'input', function(e){
+                if (e.which == 13 && $(this).val().length > 0){
+                    socket.emit('join_league', {'league_id': $(this).data('join'), 'team_name': $(this).val()}, function(){
+                       $(this).replaceWith('You have successfully joined!'); 
+                    });
+                }
+            });
+        });
+    </script>
+{% endblock %}
+{% block content %}
+    {% if my_teams %}
+        <h2>My Teams</h2>
+        <ul>
+            {% for team in my_teams %}
+                <li><a href="{{team.league.get_draft_url}}">{{team.league.name}} - {{team.name}}</a></li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    
+    <h2>Open Leagues</h2>
+    <ul id="leagues">
+        {% for league in leagues %}
+            <li id="{{league.id}}">
+                <h3>{{league.name}}</h3>
+                <ul>
+                    {% for team in league.team_set.all %}
+                        <li>{{team.name}}</li>
+                    {% endfor %}
+                </ul>
+                <div><label>Join League: </label> <input data-join="{{league.id}}" type="text"></div>
+            </li>    
+        {% endfor %}
+    </ul>
+    
+    <h2>Create League</h2>
+    <p><input id="create_league" type="text"></p>
+{% endblock %}
