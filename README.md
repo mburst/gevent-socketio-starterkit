@@ -42,7 +42,7 @@ The fantasy project is a mostly complete project though there are a few areas fo
 
 This example also includes how to use the built-in ACL and error functions for the gevent-socketio project. If it's not your pick you don't have access to the pick event.
 
-1. Run python manage.py syncdb. When asked to create a superuser you can say no if you want. There are fixtures for this project which will create users and plays for us.
+1. Create a database named fantasy then run python manage.py syncdb. When asked to create a superuser you can say no if you want. There are fixtures for this project which will create users and plays for us.
 2. There are 4 users by default (max, max1, max2, max3). The password for each user is max
 3. Start the server with python manage.py rs
 4. Open 4 new browser sessions. I used firefox, firefox private window, chrome, and chrome private window. Then login with each of the users listed in step 2.
